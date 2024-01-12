@@ -1,0 +1,133 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BMSI-.#####",
+ "creation": "2024-01-11 11:35:59.111476",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "bms_item_group",
+  "formula",
+  "is_stockable",
+  "section_break_zfb8e",
+  "uom",
+  "purchase_uom",
+  "uom_conversion",
+  "section_break_bg4pl",
+  "cost_types",
+  "section_break_6rojv",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_stockable",
+   "fieldtype": "Check",
+   "label": "Is Stockable"
+  },
+  {
+   "fieldname": "bms_item_group",
+   "fieldtype": "Data",
+   "label": "BMS Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purchase_uom",
+   "fieldtype": "Data",
+   "label": "Purchase UOM",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "uom_conversion",
+   "fieldtype": "Data",
+   "label": "UOM Conversion "
+  },
+  {
+   "fieldname": "formula",
+   "fieldtype": "Data",
+   "label": "Formula",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_types",
+   "fieldtype": "Table",
+   "label": "Cost Types",
+   "options": "Cost Types"
+  },
+  {
+   "fieldname": "section_break_zfb8e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_6rojv",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_bg4pl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BMS Item",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-11 15:39:04.637979",
+ "modified_by": "Administrator",
+ "module": "Building Management System",
+ "name": "BMS Item",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

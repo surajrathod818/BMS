@@ -1,0 +1,73 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-15 09:14:03.847272",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "description",
+  "bms_drawing",
+  "bms_project",
+  "measurement_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "bms_drawing",
+   "fieldtype": "Link",
+   "label": "BMS Drawing",
+   "options": "BMS Drawing"
+  },
+  {
+   "fetch_from": "bms_drawing.bms_project",
+   "fieldname": "bms_project",
+   "fieldtype": "Data",
+   "label": "BMS Project"
+  },
+  {
+   "fieldname": "measurement_type",
+   "fieldtype": "Select",
+   "label": "Measurement Type",
+   "options": "Area\nLinear\nCount\nLinear with Drop\nPitched Area\nPitched Linear\nSurface Area\nVolume 2D\nVolume 3D"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-15 09:18:20.768379",
+ "modified_by": "Administrator",
+ "module": "Building Management System",
+ "name": "BMS Takeoff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
